@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviasales</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary" 
+    >
+        <div class="container">
+            <a class="navbar-brand text-light" href="#" ><img src="img/800px-Aviasales_logo.png" style="width: 100px; height: 50px;"></a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="#" aria-current="page"
+                            ><i class="fa-solid fa-house"></i>   Главная страница
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#"><i class="fa-regular fa-user"></i>  Профиль</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#"><i class="fa-solid fa-question"></i>      Поддержка</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle text-light"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            ><i class="fa-solid fa-info"></i>    Услуги</a
+                        >
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId"
+                        >
+                            <a class="dropdown-item " href="#"
+                                ><i class="fa-solid fa-money-check-dollar"></i>   Купить билет</a
+                            >
+                            <a class="dropdown-item " href="#"
+                                ><i class="fa-solid fa-hotel"></i>   Отели</a
+                            >
+                            <a class="dropdown-item " href="#"
+                                ><i class="fa-solid fa-key"></i>   Апартаменты</a
+                            ><a class="dropdown-item" href="#"
+                            > <i class="fa-solid fa-heart"></i>   Избранное</a
+                        ><a class="dropdown-item " href="#"
+                        ><i class="fa-solid fa-car"></i>   Аренда авто</a
+                    >
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input
+                        class="form-control me-sm-2"
+                        type="text"
+                        placeholder="Поиск билетов"
+                    />
+                    <button
+                        class="btn btn-success my-2 my-sm-0 text-light"
+                        type="submit"
+                    >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 position-relative">
+                 <div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <ol class="carousel-indicators list-unstyled">
+                        <li
+                            data-bs-target="#carouselId"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="First slide"
+                        ></li>
+                        <li
+                            data-bs-target="#carouselId"
+                            data-bs-slide-to="1"
+                            aria-label="Second slide"
+                        ></li>
+                        <li
+                            data-bs-target="#carouselId"
+                            data-bs-slide-to="2"
+                            aria-label="Third slide"
+                        ></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <a href="#">
+                            <img
+                                src="img/one.png"
+                                class="w-100 d-block"
+                                alt="First slide"
+                                style="border-radius: 20px;"
+                            /></a>
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                            <img
+                                src="img/two.png"
+                                class="w-100 d-block"
+                                alt="Second slide"
+                                style="border-radius: 20px;"
+                            /></a>
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                            <img
+                                src="img/three.png"
+                                class="w-100 d-block"
+                                alt="Third slide"
+                                style="border-radius: 20px;"
+                            /></a>
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselId"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselId"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                 </div>
+                 
+
+
+
+
+                 <div id="carouselIdtwo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                  <ol class="carousel-indicators list-unstyled">
+                      <li
+                          data-bs-target="#carouselIdtwo"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="First slide"
+                      ></li>
+                      <li
+                          data-bs-target="#carouselIdtwo"
+                          data-bs-slide-to="1"
+                          aria-label="Second slide"
+                      ></li>
+                      <li
+                          data-bs-target="#carouselIdtwo"
+                          data-bs-slide-to="2"
+                          aria-label="Third slide"
+                      ></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                          <a href="#">
+                          <img
+                              src="img/one.png"
+                              class="w-100 d-block"
+                              alt="First slide"
+                              style="border-radius: 20px;"
+                          /></a>
+                          <div class="carousel-caption d-none d-md-block">
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <a href="#">
+                          <img
+                              src="img/two.png"
+                              class="w-100 d-block"
+                              alt="Second slide"
+                              style="border-radius: 20px;"
+                          /></a>
+                          <div class="carousel-caption d-none d-md-block">
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <a href="#">
+                          <img
+                              src="img/three.png"
+                              class="w-100 d-block"
+                              alt="Third slide"
+                              style="border-radius: 20px;"
+                          /></a>
+                          <div class="carousel-caption d-none d-md-block">
+                          </div>
+                      </div>
+                  </div>
+                  <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselIdtwo"
+                      data-bs-slide="prev"
+                  >
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselIdtwo"
+                      data-bs-slide="next"
+                  >
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                  </button>
+               </div>
+            </div>
+        
+            <div class="col-6">
+                <div class="card">
+                    <a href="#">
+                    <img
+                        src="img/1.webp"
+                        class="card-img-top"
+                        
+                    /></a>
+                </div>
+            </div>
+        
+            </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <img class="card-img-top" src="img/1.jpg" alt="Title" style="height: 450px;border: 5px solid rgb(10, 202, 236);" />
+            <div class="card-body dwa" style="margin-top: -94px; color: white; ">
+              <h4 class="card-title text-center odin"><b>Улица</b></h4>
+              <p class="card-text text-center odin"><b>Я забыл как называется это место</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <img class="card-img-top" src="img/2.jpg" alt="Title" style="height: 450px;border: 5px solid rgb(10, 202, 236)"  />
+            <div class="card-body text-center" style="margin-top: -94px; color: white;;">
+              <h4 class="card-title odin"><B>Ботанический сад</B></h4>
+              <p class="card-text odin"><B>Тоже самое</B></p>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <h1 class="text-center text-light">Цены на данный момент</h1>
+    <br>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <select class="form-select">
+              <option selected> Москва
+                Россия</option>
+              <option value="1">Ташкент - Москва
+                От 2 658 646UZS</option>
+              <option value="2">Самарканд - Москва
+                От 3 110 719UZS</option>
+              <option value="3">Фергана - Москва
+                От 3 061 349UZS</option>Бухара - Москва
+                От 3 146 398UZS
+              <option value="4">Бухара - Москва
+                От 3 146 398UZS</option>
+              <option value="5">Ургенч - Москва
+                От 3 046 276UZS</option>
+              <option value="6">Наманган - Москва
+                От 3 364 068UZS</option>
+              <option value="7">Нукус - Москва
+                От 3 112 102UZS</option>
+              <option value="8">Термез - Москва
+                От 4 595 551UZS</option>
+              <option value="">Навои - Москва
+                От 4 371 104UZS</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <select class="form-select">
+              <option selected>
+                Санкт-Петербург
+                Россия
+                </option>
+              <option value="1">Ташкент - Санкт-Петербург
+                От 3 005 618UZS</option>
+              <option value="2">Самарканд - Санкт-Петербург
+                От 4 099 639UZS</option>
+              <option value="3">Ургенч - Санкт-Петербург
+                От 4 302 927UZS</option>
+              <option value="4">Бухара - Санкт-Петербург
+                От 3 508 029UZS</option>
+              <option value="5">Фергана - Санкт-Петербург
+                От 4 302 927UZS</option>
+              <option value="6"> Наманган - Санкт-Петербург
+                От 4 136 009UZS</option>
+              <option value="7">Карши - Санкт-Петербург
+                От 5 164 203UZS</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <select class="form-select">
+              <option selected>
+                Новосибирск
+                Россия
+                
+               </option>
+              <option value="1">1Ташкент - Новосибирск
+                От 3 161 610UZS</option>
+              <option value="2"> Фергана - Новосибирск
+                От 3 255 095UZS</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <select class="form-select">
+              <option selected>Сочи
+                Россия
+                
+                </option>
+              <option value="1">Ташкент - Сочи
+                От 3 516 050UZS</option>
+              <option value="2">Самарканд - Сочи
+                От 2 517 450UZS</option>
+
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <select class="form-select">
+              <option selected>Казань
+                Россия
+            </option>
+              <option value="1">Ташкент - Казань
+                От 4 184 273UZS</option>
+              <option value="2">Фергана - Казань
+                От 3 715 881UZS</option>
+              <option value="3">Самарканд - Казань
+                От 3 900 085UZS</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <select class="form-select">
+              <option selected>Стамбул
+                Турция
+                </option>
+              <option value="1">Ташкент - Стамбул
+                От 4 146 105UZS</option>
+              <option value="2">Самарканд - Стамбул
+                От 4 104 755UZS</option>
+              <option value="3">Фергана - Стамбул
+                От 4 589 881UZS</option>
+              <option value="4">Бухара - Стамбул
+                От 4 386 593UZS</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <select class="form-select">
+              <option selected>Красноярск
+                Россия
+                
+                </option>
+              <option value="1">Ташкент - Красноярск
+                От 2 855 710UZS</option>
+              <option value="2">Наманган - Красноярск
+                От 3 531 954UZS</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <select class="form-select">
+              <option selected>Алматы
+                Казахстан
+                </option>
+              <option value="1">Ташкент - Алматы
+                От 1 817 283UZS</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <select class="form-select">
+              <option selected>
+                Сеул
+                Южная Корея
+                </option>
+              <option value="1">Ташкент - Сеул
+                От 5 886 221UZS</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <select class="form-select">
+              <option selected>Минеральные Воды
+                Россия
+                Ташкент - Минеральные Воды
+                От 3 087 763UZS</option>
+              <option value="1">Ташкент - Минеральные Воды
+                От 3 087 763UZS</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <select class="form-select">
+              <option selected>
+                Дубай
+                ОАЭ
+                </option>
+              <option value="1">Ташкент - Дубай
+                От 3 264 775UZS</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <select class="form-select">
+              <option selected>
+                Абу-Даби
+                ОАЭ
+                </option>
+              <option value="1">Ташкент - Абу-Даби
+                От 1 520 372UZS</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-6">
+            <div class="card">
+              <a href="#"><img class="card-img-top" src="img/5.png" alt="Title" /></a>
+              <div class="card-body dwa" style="margin-top: -94px; color: white; ">
+                <h4 class="card-title text-center odin"><b></b></h4>
+                <p class="card-text text-center odin"><b></b></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <a href="#"><img class="card-img-top" src="img/6.png" alt="Title" /></a>
+              <div class="card-body text-center" style="margin-top: -94px; color: white;;">
+                <h4 class="card-title odin">
+                  
+                  </h4>
+                <p class="card-text odin"></p>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <br>
+      <br>
+
+
+
+    <hr>
+    <div class="container bg-light p-1">
+            <div class="row ">
+                <div class="col-2">
+                    <ul class="one-ul text-center">
+                        <li><b>Страны</b></li>
+                        <li>
+                        <ul class="two-ul">
+                                <li class="one-li"><a href="#">Россия</a></li>
+                                <li class="one-li"><a href="#">Узбекистан</a></li>
+                                <li class="one-li"><a href="#">Южная Корея</a> </li>
+                                <li class="one-li"><a href="#">Турция</a></li>
+                                <li class="one-li"><a href="#">Казахстан</a></li>
+                                <li class="one-li"><a href="#">Китай</a></li>
+                            </ul>    
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="one-ul text-center">
+                        <li><b>Города</b></li>
+                        <li>
+                        <ul class="two-ul">
+                                <li class="one-li"><a href="#">Ташкент</a></li>
+                                <li class="one-li"><a href="#">Самарканд</a></li>
+                                <li class="one-li"><a href="#">Фергана</a> </li>
+                                <li class="one-li"><a href="#">Москва</a></li>
+                                <li class="one-li"><a href="#"> Санкт-Петербург</a></li>
+                                <li class="one-li"><a href="#">Стамбул</a></li>
+                            </ul>    
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="one-ul text-center">
+                        <li><b>Авиакомпании</b></li>
+                        <li>
+                        <ul class="two-ul">
+                                <li class="one-li"><a href="#">Узбекские авиалинии</a></li>
+                                <li class="one-li"><a href="#">Aeroflot</a></li>
+                                <li class="one-li"><a href="#">SCAT</a> </li>
+                                <li class="one-li"><a href="#">Nordwind</a></li>
+                                <li class="one-li"><a href="#">Turkish Airlines</a></li>
+                                <li class="one-li"><a href="#">Utair</a></li>
+                            </ul>    
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="one-ul text-center">
+                        <li><b>Аэропорты</b></li>
+                        <li>
+                        <ul class="two-ul">
+                                <li class="one-li"><a href="#">Ташкент</a></li>
+                                <li class="one-li"><a href="#">Самарканд</a></li>
+                                <li class="one-li"><a href="#">Фергана</a> </li>
+                                <li class="one-li"><a href="#">Шереметьево</a></li>
+                                <li class="one-li"><a href="#">Домодедово</a></li>
+                                <li class="one-li"><a href="#">Шымкент</a></li>
+                            </ul>    
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="one-ul text-center">
+                        <li><b>Направления</b></li>
+                        <li>
+                        <ul class="two-ul">
+                                <li class="one-li"><a href="#">Ташкент – Москва</a></li>
+                                <li class="one-li"><a href="#">Ташкент – Стамбул</a></li>
+                                <li class="one-li"><a href="#">Ташкент – Казань</a> </li>
+                                <li class="one-li"><a href="#">Самарканд – Москва</a></li>
+                                <li class="one-li"><a href="#">Фергана – Москва</a></li>
+                                <li class="one-li"><a href="#">Шымкент – Стамбул</a></li>
+                            </ul>    
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+    </div>
+    
+   
+    
+</body>
+<script src="https://kit.fontawesome.com/8f446d19ac.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

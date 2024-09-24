@@ -1,0 +1,30 @@
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.one-ul{
+    list-style-type: none;
+}
+.two-ul{
+    list-style-type: none;
+}
+.one-li>a{
+    color: black;
+    text-decoration: none;
+}
+.odin{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+#carouselId{
+    top: 0;
+    position: absolute;
+}
+#carouselIdtwo{
+    bottom: 0;
+    position: absolute;
+}
